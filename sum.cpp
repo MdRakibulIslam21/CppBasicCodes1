@@ -1,18 +1,23 @@
 #include<iostream>
+#include<conio.h>
+
 using namespace std;
+
 int main()
 {
-    int t;
-    cin>>t;
-    while(t--){
-        int a,b,c;
-        cin>>a>>b>>c;
-        if(a+b==c||a+c==b||b+c==a){
-            cout<<"yes"<<endl;
-        }
-        else{
-            cout<<"NO"<<endl;
-        }
+    int n,sum=0;
+
+    cout<<"Enter a last number :";
+    cin >>n;
+
+    for(int i=1;i<=n;i=i+1){
+      sum=sum+i;
     }
-    return 0;
+    cout<<sum;
+
+
+
+
+
+    getch();
 }
