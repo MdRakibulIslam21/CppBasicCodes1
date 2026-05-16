@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -65,3 +66,72 @@ int main()
        cout<<"sum is "<<sum<<endl;
        cout<<"avg is "<<avg<<endl;
 }
+=======
+
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int A[10][10];
+    int B[10][10];
+    int C[10][10];
+    int i,j,n1,n2;
+    cout<<"Enter a num of rows :"<<endl;
+    cin>>n1;
+    cout<<"Enter a num of cols :"<<endl;
+    cin>>n2;
+
+    cout<<"Enter a element of A matrix :"<<endl;
+    for(int i=0;i<n1;i++)
+    {
+        for(int j=0;j<n2;j++)
+        {
+            cout<<"A["<<i<<"]["<<j<<"]";
+            cin>>A[i][j];
+        }
+    }
+    cout<<"A ="<<endl;
+
+    for(int i=0;i<n1;i++)
+    {
+        for(int j=0;j<n2;j++)
+        {
+            cout<<A[i][j]<<" ";
+        }
+        cout<<endl;
+
+    }/*cout<<"Enter a element of B matrix :"<<endl;
+    for(int i=0;i<n1;i++)
+    {
+        for(int j=0;j<n2;j++)
+        {
+            cout<<"B["<<i<<"]["<<j<<"]";
+            cin>>B[i][j];
+        }
+    }
+    cout<<"B ="<<endl;
+    for(int i=0;i<n1;i++)
+    {
+        for(int j=0;j<n2;j++)
+        {
+            cout<<B[i][j]<<" ";
+        }
+        cout<<endl;
+    }*/
+       float sum=0;
+       for(i=0;i<n1;i++)
+       {
+           for(j=0;j<n2;j++)
+        {
+            sum=sum+A[i][j];
+        }
+       }
+       float avg=sum/(n1*n2);
+
+       cout<<"sum is "<<sum<<endl;
+       cout<<"avg is "<<avg<<endl;
+}
+>>>>>>> 652974fecab155fcc26a5b237e85b45e659c0845
